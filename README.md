@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This website shows random youtube video to the user.
 
-## Getting Started
+It simply uses youtube api to search a random query string and shows the first result.
+It can also show zero viewed video. For this purpose it uses [Petittube](https://petittube.com/).
 
-First, run the development server:
+It offers API endpoint for random or zero viewed video.
 
-```bash
-npm run dev
-# or
-yarn dev
+# For Random Video
+
+create a get request to this endpoint and you will get a random youtube video data.
+
+```
+https://randtube.varcel.app/api/random
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# For Zero Viewed Video
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+create a get request to this endpoint and you will get a Zero Viewed youtube video data.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+https://randtube.varcel.app/api/random
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# How To Use Video Data
 
-## Learn More
+to stream the video you can use ifream with a src like this:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+<iframe width="630" 
+        height="473" 
+        src="https://www.youtube.com/embed/[VIDEO_ID_HERE]?autoplay=1" frameborder="0"
+        allowfullscreen></iframe>
+```

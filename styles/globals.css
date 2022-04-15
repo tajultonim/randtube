@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background: rgb(0, 0, 0);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +14,94 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-wraper {
+  max-width: 640px;
+  max-height: 360px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.next-video {
+  margin-right: 10px;
+  margin-top: 20px;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 150px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.next-video:hover {
+  background: rgb(242, 0, 0);
+}
+
+.next-video:active {
+  background-color: rgb(119, 0, 0);
+}
+
+.zero-viewed {
+  margin-left: 10px;
+  margin-top: 20px;
+  color: white;
+  background: red;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: 150px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.zero-viewed:hover {
+  background: rgb(242, 0, 0);
+}
+
+.zero-viewed:active {
+  background-color: rgb(119, 0, 0);
+}
+
+.white {
+  color: rgb(255, 255, 255);
+}
+
+.red {
+  color: red;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
 }
