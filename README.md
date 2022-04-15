@@ -10,7 +10,7 @@ It offers API endpoint for random or zero viewed video.
 create a get request to this endpoint and you will get a random youtube video data.
 
 ```
-https://randtube.varcel.app/api/random
+https://randtube.vercel.app/api/random
 ```
 
 # For Zero Viewed Video
@@ -18,7 +18,7 @@ https://randtube.varcel.app/api/random
 create a get request to this endpoint and you will get a Zero Viewed youtube video data.
 
 ```
-https://randtube.varcel.app/api/random
+https://randtube.vercel.app/api/zeroviewed
 ```
 
 # How To Use Video Data
